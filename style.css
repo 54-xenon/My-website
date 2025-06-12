@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
 
 * {
-    /* ページ全体の設定 */
+    /* ページ全体の設定 -> ページの初期化*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -38,7 +38,7 @@ header h2 {
 }
 
 .title_main {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     background-color: rgba(233, 233, 233, 0.757);
@@ -48,7 +48,6 @@ header h2 {
     margin-bottom: 1px;
     padding-top: 1px;
     font-size: 60px;
-
 }
 
 #imgs {
@@ -94,6 +93,8 @@ header h2 {
 }
 
 .work {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: rgba(233, 233, 233, 0.757);
     text-align: center;
 }
