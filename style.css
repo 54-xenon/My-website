@@ -8,6 +8,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* footeを下に固定するおまじない */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* これが重要 */
+}
+
+
 header {
     padding-top: 15px;
     padding-left: 10px;
@@ -32,6 +48,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: rgb(177, 177, 177);
 }
+
 header h2 {
     font-size: 25px;
     margin-right: 170px;
@@ -97,4 +114,11 @@ header h2 {
     padding-bottom: 20px;
     background-color: rgba(233, 233, 233, 0.757);
     text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
 }
