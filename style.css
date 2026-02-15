@@ -8,8 +8,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* footeを下に固定するおまじない */
-html, body {
+/* footerを下に固定するおまじない */
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -20,22 +21,29 @@ body {
 }
 
 main {
-    flex: 1; /* これが重要 */
+    flex: 1;
+    /* これが重要 */
 }
 
-
 header {
-    padding-top: 15px;
-    padding-left: 10px;
-    padding-bottom: 20px;
+    padding: 15px 20px 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     background-color: black;
-    color: white;   
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
 }
 
 header nav ul li {
-    margin-left: 60px;
     display: inline-block;
 }
 
@@ -51,7 +59,6 @@ header nav ul li a:hover {
 
 header h2 {
     font-size: 25px;
-    margin-right: 170px;
 }
 
 .title_main {
@@ -69,7 +76,7 @@ header h2 {
 
 #imgs {
     margin-top: 40px;
-    width: 15%;
+    width: min(220px, 45vw);
     border-radius: 50%;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -79,19 +86,21 @@ header h2 {
     font-size: 30px;
     display: flex;
     justify-content: center;
-} 
+}
 
 .button {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto 20px;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 0 12px;
 }
 
 .button a {
-    padding-top: 10px;
-    padding-right: 10px;
+    padding: 10px;
     list-style: none;
     text-decoration: none;
     color: black;
@@ -121,4 +130,50 @@ footer {
     padding: 10px;
     background-color: black;
     color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px 16px 16px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        gap: 12px;
+    }
+
+    .name_title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    #imgs {
+        width: min(180px, 58vw);
+    }
+
+    .name_title {
+        font-size: 22px;
+    }
+
+    footer {
+        font-size: 12px;
+        line-height: 1.5;
+    }
 }
