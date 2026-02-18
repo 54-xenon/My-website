@@ -1,3 +1,4 @@
+/* googlefontsを使えるようにする */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
 
 * {
@@ -5,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 
 /* footerを下に固定するおまじない */
@@ -76,6 +77,7 @@ header h2 {
 
 #imgs {
     margin-top: 40px;
+    margin-bottom: 20px;
     width: min(220px, 45vw);
     border-radius: 50%;
     margin-left: 50%;
@@ -83,7 +85,9 @@ header h2 {
 }
 
 .name_title {
-    font-size: 30px;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
     display: flex;
     justify-content: center;
 }
@@ -108,7 +112,7 @@ header h2 {
 }
 
 .button a:hover {
-    color: rgb(113, 189, 255);
+    color: rgb(177, 177, 177);
 }
 
 .works_title {
@@ -118,12 +122,24 @@ header h2 {
     margin-top: 20px;
 }
 
-.work {
+.sub_header {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgba(233, 233, 233, 0.757);
     text-align: center;
 }
+/* 見出しのフォントの調整 */
+.sub_header h2 {
+    font-size: 2rem;
+}
+
+.content {
+    margin: 15px;
+    
+}
+
+
+
 
 footer {
     text-align: center;
