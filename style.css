@@ -136,7 +136,75 @@ header h2 {
     margin: 15px;
     
 }
+/* HeroCard 作った制作物とかを表示するCSS */
 
+.hero-card {
+    border-radius: 48px;
+    padding: 48px;
+    margin-bottom: 20px;
+}
+.hero-card_inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+.hero-card_image img {
+    /* 画像の横幅だけ上限を決める */
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+}
+.hero-card_content {
+    padding-left: 16px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-card_label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 12px;
+}
+.hero-card_title {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.hero-card_text {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 32px;
+}
+.hero-card_button {
+    text-decoration: none;
+    color: #333;
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 400px;
+    padding: 12px 24px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#button_url {
+    text-decoration: none;
+}
+.hero-card_button:hover {
+    background: black;
+    color: #fff;
+}
+/* 背景色の指定 */
+#hero-card1_color {
+    background: #eef4ea;
+
+}
+
+#hero-card2_color {
+    background: #eaeef4;
+}
 
 
 
@@ -169,6 +237,10 @@ footer {
 
     .name_title {
         font-size: 24px;
+    }
+   
+    .hero-card__inner {
+        flex-direction: column;
     }
 }
 

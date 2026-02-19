@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GadgetFreakのサイト"/>
+    <meta name="description" content="GadgetFreakのサイト" />
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
     <title>GadgetFreak's website</title>
@@ -17,9 +17,9 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="https://54-xenon.github.io/My-website/aboutme.html">About</a></li>
-                <li><a href="https://54-xenon.github.io/My-website/project.html">Project</a></li>
-                <li><a href="https://www.twitter.com/messages/compose?recipient_id=[@M9zRs0VDM9RTU7B]">Contact</a>
+                <li><a href="">Link</a></li>
+                <li><a href="">Developed</a></li>
+                <li><a href="">About me</a></li>
                 </li>
             </ul>
         </nav>
@@ -31,27 +31,19 @@
                 <img src="./image/IMG_1085.JPG" alt="アイコン画像" id="imgs">
                 <h2 class="name_title">GadgetFreak</h2>
             </div>
-            <!-- button -->
-            <div class="button">
-                <a href="https://github.com/54-xenon">GitHub</a>
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjYlaa6j4GAAxVB72EKHdDHAswQFnoECBMQAQ&url=https%3A%2F%2Ftwitter.com%2Fm9zrs0vdm9rtu7b&usg=AOvVaw2MdLMoXejni4xsUpp98Jap&opi=89978449">X</a>
-                <a href="https://zenn.dev/appleshinja">Zenn</a>
-                <a href="https://www.geartics.com/M9zRs0VDM9RTU7B">Geartics</a>
-            </div>
             <!-- Link -->
             <div class="sub_header">
                 <h2>Link</h2>
             </div>
             <div class="content">
-                <p>SNSやGithubのプロフィール等の各種リンクを配置する</p>
-            </div>
-
-            <!-- product -->
-            <div class="sub_header">
-                <h2>Developed</h2>
-            </div>
-            <div class="content">
-                
+                <!-- button -->
+                <div class="button">
+                    <a href="https://github.com/54-xenon">GitHub</a>
+                    <a
+                        href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjYlaa6j4GAAxVB72EKHdDHAswQFnoECBMQAQ&url=https%3A%2F%2Ftwitter.com%2Fm9zrs0vdm9rtu7b&usg=AOvVaw2MdLMoXejni4xsUpp98Jap&opi=89978449">X</a>
+                    <a href="https://zenn.dev/appleshinja">Zenn</a>
+                    <a href="https://www.geartics.com/M9zRs0VDM9RTU7B">Geartics</a>
+                </div>
             </div>
 
             <!-- skill -->
@@ -60,6 +52,49 @@
             </div>
             <div class="content">
                 <p>使用できる言語、技術スタック等をタイルみたいな形状の要素で表示する</p>
+            </div>
+
+            <!-- product -->
+            <div class="sub_header">
+                <h2>Developed</h2>
+            </div>
+            <div class="content">
+                <!-- hero-card(NarouReader) -->
+                <div class="hero-card" id="hero-card1_color">
+                    <div class="hero-card_inner">
+                        <div class="hero-card_image">
+                            <!-- image -->
+                            <img src="/image/PlaygroundImage.jpeg" alt="">
+                        </div>
+
+                        <div class="hero-card_content">
+                            <p class="hero-card_label">新しいリーディング体験</p>
+                            <h1 class="hero-card_title">
+                                NarouRader
+                            </h1>
+                            <p class="hero-card_text">なろう小説のAPIを使用し、これまでにない読書体験を提供する</p>
+                            <a href="https://github.com/54-xenon/NarouReader" class="hero-card_button">詳細を見る → </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AnkiCards -->
+                <div class="hero-card" id="hero-card2_color">
+                    <div class="hero-card_inner">
+                        <div class="hero-card_image">
+                            <img src="/image/PlaygroundImage1.jpeg" alt="AnkiCardsのイメージ画像">
+                        </div>
+                        <div class="hero-card_content">
+                            <p class="hero-card_label">新しいフラッシュカード</p>
+                            <h1 class="hero-card_title">AnkiCards</h1>
+                            <p class="hero-card_text">
+                                AnkiCardsは、フラッシュカード作成の「面倒」をなくすことを目指した学習アプリです。サインアップ不要、広告なし、必要な機能に絞ったシンプルな体験を提供します。
+                            </p>
+                            <a href="https://github.com/54-xenon/AnkiCards-Flutter" class="hero-card_button">詳細を見る →</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- about me -->
@@ -73,7 +108,8 @@
     </main>
     <!-- buttom -->
     <footer class="footer">
-        <p>Copyright © 2021-2025 GadgetFreak. All Rights Reserved.</p>
+        <p>Copyright © 2021-2026 GadgetFreak. All Rights Reserved.</p>
     </footer>
 </body>
+
 </html>
