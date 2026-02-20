@@ -61,6 +61,16 @@ header h2 {
     font-size: 25px;
 }
 
+.nav-toggle {
+    display: none;
+    font-size: 28px;
+    line-height: 1;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
 .title_main {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -217,8 +227,8 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
         gap: 10px;
         padding: 12px 16px 16px;
     }
@@ -227,30 +237,42 @@ footer {
         font-size: 22px;
     }
 
-    header nav {
+    .nav-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .site-nav {
         width: 100%;
+        display: none;
     }
 
-    header nav ul {
-        gap: 12px;
+    .site-nav.is-open {
+        display: block;
     }
 
-    .name_title {
-        font-size: 24px;
-    }
-   
-    .hero-card_inner {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
     header nav ul {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
     }
 
+    .name_title {
+        font-size: 24px;
+    }
+
+    .hero-card_inner {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) {
+    .site-nav {
+        display: block !important;
+    }
+}
+
+@media (max-width: 480px) {
     #imgs {
         width: min(180px, 58vw);
     }
