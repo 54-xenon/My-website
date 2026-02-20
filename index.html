@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="GadgetFreakのサイト" />
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>GadgetFreak's website</title>
 </head>
 
@@ -14,13 +14,15 @@
     <!-- header section-->
     <header>
         <h2>GadgetFreak</h2>
-        <nav>
-            <ul>
+        <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="primary-menu">
+            ☰
+        </button>
+        <nav class="site-nav">
+            <ul id="primary-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="">Link</a></li>
                 <li><a href="">Developed</a></li>
                 <li><a href="">About me</a></li>
-                </li>
             </ul>
         </nav>
     </header>
